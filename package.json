@@ -9,7 +9,10 @@
     "lint": "eslint src/**/*.{js,ts,tsx}"
   },
   "keywords": [],
-  "author": "",
+  "author": {
+    "name": "Seungjun Lee",
+    "email": "nate199458@gmail.com"
+  },
   "license": "ISC",
   "dependencies": {
     "react": "^18.3.1",
