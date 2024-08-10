@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTheme } from '../themes/theme';
 
 interface SkeletonProps {
   width?: string;
@@ -11,13 +12,15 @@ export const Skeleton: React.FC<SkeletonProps> = ({
   height = '20px',
   animated = true,
 }) => {
+  const theme = useTheme();
+
   return (
     <div
       data-testid="skeleton"
       style={{
         width,
         height,
-        backgroundColor: '#e0e0e0',
+        backgroundColor: theme.skeleton.backgroundColor,
         borderRadius: '4px',
         animation: animated ? 'pulse 1.5s ease-in-out 0.5s infinite' : 'none',
       }}
